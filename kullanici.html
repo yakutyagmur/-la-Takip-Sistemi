@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/Content/images/logo1.jpg">
+  <link rel="stylesheet" href="/Content/css/kullanici.css">
+  <title>İlaç Takip Sistemi Kullanıcı İşlemleri</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url("/Content/images/barkod.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+      opacity: 1;
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .kapsamresim {
+      margin-left: 40vh;
+      margin-top: 15vh;
+      padding-bottom: 5vh;
+    }
+
+    .input-container {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .icon {
+      padding: 2vh;
+      background: dodgerblue;
+      color: white;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 30px;
+      outline: none;
+    }
+
+    .input-field:focus {
+      border: 2px solid dodgerblue;
+    }
+
+    /* Set a style for the submit button */
+    .btn {
+      background-color: dodgerblue;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+    /* style the submit button */
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    /* Two-column layout */
+    .col {
+      float: left;
+      width: 50%;
+      margin: auto;
+      padding: 0 65px;
+
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+
+    /* text inside the vertical line */
+    .vl-innertext {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      padding: 8px 10px;
+    }
+
+    /* hide some text on medium and large screens */
+    .hide-md-lg {
+      display: none;
+    }
+
+
+    /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 650px) {
+      .col {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      /* hide the vertical line */
+      .vl {
+        display: none;
+      }
+
+      /* show the hidden text on small screens */
+      .hide-md-lg {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* style the container
+      .container {
+        position: relative;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px 0 30px 0;
+      }  */
+
+    /* style inputs and link buttons */
+    input,
+    .btn {
+
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      margin: 5px 0;
+      opacity: 0.85;
+      display: inline-block;
+      font-size: 17px;
+      line-height: 20px;
+      text-decoration: none;
+      /* remove underline from anchors */
+    }
+
+    input:hover,
+    .btn:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="kapsam1">
+    <div class="kapsamresim">
+      <img src="/Content/images/logoLogin.png" alt="">
+    </div>
+
+    <div class="container">
+      <form action="ilacim_nerede.html">
+        <div class="row">
+          <div class="col">
+            <i style="border-radius: 1vh; margin-left: 7vh;" class="fa fa-user icon"> <input type="text" name="username"
+                placeholder="Username" required></i>
+            <i style="border-radius: 1vh;" class="fa fa-key icon"><input type="password" name="password"
+                placeholder="Password" required></i>
+
+            <input style="width: 70vh; margin-left: 8.3vh;  padding-top: 2vh; padding-bottom: 2vh;" type="submit"
+              value="Login">
+            <div class="col">
+              <a href="kayit.html"
+                style="color:white;width: 67.5vh; margin-left:1vh; text-align: center;  padding-top: 2vh; padding-bottom: 2vh;"
+                class="btn">Sign up</a>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+</body>
+
+</html>
